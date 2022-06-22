@@ -19,8 +19,17 @@ const respostas = [
   "Sinais apontam que sim.",
   "Certeza!",
 ]
-  
-const numeroAleatorio=respostas.length
-const fazerPergunta= Math.floor(Math.random() * numeroAleatorio )
-console.log (fazerPergunta)
+   
 
+//criar função para o botão fazer pergunta
+
+function fazerPergunta() {
+    
+    //gerando um número inteiro aleatório da lista respostas
+    const totalRespostas=respostas.length
+    const numeroAleatorio= Math.floor(Math.random() * totalRespostas)
+   
+    
+    console.log(numeroAleatorio)
+
+}
