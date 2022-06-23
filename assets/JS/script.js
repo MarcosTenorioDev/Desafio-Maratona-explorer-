@@ -1,35 +1,40 @@
-const respostas = [
-  "Não tenho tanta certeza.",
-  "É decididamente assim.",
-  "Não conte com isso.",
-  "Sem dúvidas!",
-  "Pergunte novamente mais tarde.",
-  "Sim, definitivamente!",
-  "Minha resposta é não.",
-  "Você pode contar com isso.",
-  "Melhor não te dizer agora.",
-  "A meu ver, sim.",
-  "Minhas fontes dizem não.",
-  "Provavelmente.",
-  "Não é possível prever agora.",
-  "Perspectiva boa.",
-  "As perspectivas não são tão boas.",
-  "Sim.",
-  "Concentre-se e pergunte novamente.",
-  "Sinais apontam que sim.",
-  "Certeza!",
+const inputPergunta = document.querySelector("#inputPergunta")
+const resposta = document.querySelector("#resposta")
+const listaRespostas = [
+    "Não tenho tanta certeza.",
+    "É decididamente assim.",
+    "Não conte com isso.",
+    "Sem dúvidas!",
+    "Pergunte novamente mais tarde.",
+    "Sim, definitivamente!",
+    "Minha resposta é não.",
+    "Você pode contar com isso.",
+    "Melhor não te dizer agora.",
+    "A meu ver, sim.",
+    "Minhas fontes dizem não.",
+    "Provavelmente.",
+    "Não é possível prever agora.",
+    "Perspectiva boa.",
+    "As perspectivas não são tão boas.",
+    "Sim.",
+    "Concentre-se e pergunte novamente.",
+    "Sinais apontam que sim.",
+    "Certeza!",
 ]
-   
+
 
 //criar função para o botão fazer pergunta
-
 function fazerPergunta() {
-    
-    //gerando um número inteiro aleatório da lista respostas
-    const totalRespostas=respostas.length
-    const numeroAleatorio= Math.floor(Math.random() * totalRespostas)
-   
-    
-    console.log(numeroAleatorio)
-
+  
+  if (inputPergunta.value == "") {
+    alert("digite sua pergunta")
+    return
+  }
+ 
+  //gerando um número inteiro aleatório da lista respostas
+  const totalRespostas = listaRespostas.length
+  const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
+  resposta.innerHTML = (listaRespostas[numeroAleatorio])
+  
+  
 }

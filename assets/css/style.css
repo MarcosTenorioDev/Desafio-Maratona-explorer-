@@ -35,7 +35,6 @@ button, input{
     padding: 20px;
     font-size: 20px;
     border-radius: 5px;
-
     
 }
 .box_input{
@@ -53,4 +52,12 @@ button{
 button:hover{
     filter: brightness(1.2);
 
+}
+h3{
+    margin-top: 10px;
+
+}
+h5{
+    color: red;
+    
 }
