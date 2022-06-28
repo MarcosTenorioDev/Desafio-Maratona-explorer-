@@ -8,7 +8,7 @@
 
 <p> Página criada com um proposito educacional para introdução ao uso de CSS, HTML e Javascript </p>
 
-##  Tecnologias usadas
+## ✔️Tecnologias usadas
 
 - `` Javascript
 - `` HTML
