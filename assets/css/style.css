@@ -16,7 +16,7 @@ img{
 #container{
     margin-top: 100px;
     width: 50%;
-    margin-inline: auto;
+    margin: 0 auto;
     max-width: 500px;
 
 }   
@@ -53,11 +53,15 @@ button:hover{
     filter: brightness(1.2);
 
 }
-h3{
-    margin-top: 10px;
 
-}
-h5{
-    color: red;
+#resposta{
+    margin-top: 25px;
     
+}
+
+#resposta div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
 }
