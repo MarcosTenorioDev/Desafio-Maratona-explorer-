@@ -1,3 +1,4 @@
+const buttonPergunta = document.querySelector("#buttonPergunta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const resposta = document.querySelector("#resposta")
 const listaRespostas = [
@@ -30,6 +31,8 @@ function fazerPergunta() {
     return
   }
 
+  buttonPergunta.setAttribute("disabled",true)
+
   //gerando um número inteiro aleatório da lista respostas e transformando o número em uma frase
   const totalRespostas = listaRespostas.length
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
@@ -37,7 +40,7 @@ function fazerPergunta() {
   resposta.innerHTML = perguntaRepeat + (listaRespostas[numeroAleatorio])
   
   //animação de desaparecer as respostas
-  setTimeout(function(){resposta.style.opacity = "0"}, 6000);
+  setTimeout(function(){resposta.style.opacity = "0", 
+  buttonPergunta.removeAttribute("disabled");}, 4000);
   setTimeout(function(){resposta.style.opacity = "1"}, 0);
-
 }
