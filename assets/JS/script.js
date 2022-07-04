@@ -39,7 +39,7 @@ function fazerPergunta() {
   const perguntaRepeat = "<div>" + inputPergunta.value + "</div>"
   resposta.innerHTML = perguntaRepeat + (listaRespostas[numeroAleatorio])
   
-  //animação de desaparecer as respostas
+  //animação de desaparecer as respostas e função para desabilidar respostas sem controle
   setTimeout(function(){resposta.style.opacity = "0", 
   buttonPergunta.removeAttribute("disabled");}, 4000);
   setTimeout(function(){resposta.style.opacity = "1"}, 0);

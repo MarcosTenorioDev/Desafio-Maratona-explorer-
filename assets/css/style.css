@@ -10,7 +10,7 @@ body{
         text-align: center;
         font-family: sans-serif; 
 }
-img{
+#container img{
     margin-top: 100px;
 }
 #container{
@@ -20,16 +20,16 @@ img{
     max-width: 500px;
 
 }   
-h1{
+#container h1{
         margin-top: 20px;
         margin-bottom: 10px;
         opacity: 0.9;
 }
-p{ 
+#container p{ 
     margin-bottom: 40px;
     opacity: 0.7;
 }
-button, input{
+#container button, input{
     display: block;
     width: 100%;
     padding: 20px;
@@ -42,14 +42,14 @@ button, input{
     display: block;
     
 }
-button{
+#container button{
     margin-top: 20px;
     background-color: blueviolet;
     color: white;    
     transition: filter .4s;
 }
 
-button:hover{
+#container button:hover{
     filter: brightness(1.2);
 }
 
